@@ -1,0 +1,30 @@
+{
+  "name": "timeline-tool",
+  "version": "1.0.0",
+  "description": "3D/2D Timeline Tool with AI Integration",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Tests will be added later\" && exit 0"
+  },
+  "keywords": [
+    "timeline",
+    "3d",
+    "visualization",
+    "threejs",
+    "d3"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^7.9.0",
+    "three": "^0.158.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.19"
+  }
+}
