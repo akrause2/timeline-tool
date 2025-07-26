@@ -1,5 +1,5 @@
 # Timeline Tool Project Context
-
+For Future Chat Handoffs EX "Continue helping me build this timeline tool: https://github.com/akrause2/timeline-tool - We just completed Phase 1 (data architecture), moving to Phase 2 (spreadsheet interface)"
 ## Project Scope
 3D/2D Timeline visualization tool with AI integration, tab-based UI (table ↔ timeline), D3 charts above timelines in 3D space.
 
