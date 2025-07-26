@@ -22,7 +22,28 @@ export const TimelineEventSchema = {
   icon: String,
   
   // Chart data references
-  chart_data: Object, // { type: 'line', data: [...], config: {...} }
+  chart_data: {
+    type: String, // 'line', 'bar', 'scatter', 'pie', 'heatmap', 'network'
+    data_points: Array, // Raw data: [{x: date, y: value, label: 'GDP'}, ...]
+    config: Object, // D3 configuration: {width: 300, height: 200, ...}
+    position_3d: Object, // {x: 0, y: 50, z: 0} - position above timeline in 3D
+    
+    // Performance optimization
+    cached_texture: null, // Rendered D3 canvas for Three.js planes
+    texture_resolution: Object, // {width: 512, height: 256}
+    last_rendered: Date,
+    needs_update: Boolean,
+    
+    // Interaction
+    interactive: Boolean, // Whether chart responds to mouse events
+    tooltip_enabled: Boolean,
+    zoom_enabled: Boolean,
+    
+    // Animation
+    animate_on_load: Boolean,
+    animation_duration: Number, // milliseconds
+    animation_delay: Number
+  },
   chart_position: Object, // { x: 0, y: 0, z: 0 } for 3D positioning
   
   // AI and data source tracking
